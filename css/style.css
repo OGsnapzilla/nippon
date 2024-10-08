@@ -124,12 +124,17 @@ nav li:first-child{
 }
 .row-element{
     margin: 3rem;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
 }
 .photo-circles{
     width: 70%;
+    align-self: center;
     border-radius: 100%;
     margin: 1rem;
 }
+
 
 /*Mest populære - section på forsiden*/
 .popular-box{
@@ -187,4 +192,28 @@ footer article {
 .sociale-medier{
     font-size: 2rem;
     margin: 0 0.8rem;
+}
+
+/*MÅLTIDSKASSER*/
+.mealbox{
+    background-color: #37332A;
+}
+.meals{
+    width: 30rem;
+}
+
+/*Making show more - show less button*/
+.show-function{
+    max-height: 9.5rem;
+    overflow: hidden; 
+    position: relative;
+}
+.show-function.full{
+    max-height: none; 
+}
+.show-more{
+    color: blue;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 10px;
 }
