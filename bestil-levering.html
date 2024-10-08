@@ -8,29 +8,77 @@
     <script src="js/script.js" defer></script>
 </head>
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">indsæt logo</a></li>
+                <li><a href="bestil.html">Bestil måltidskasse</a> </li>
+                <li><a href="#">Opskrifter</a></li>
+                <li><a href="maaltidskasser.html">Måltidskasser</a></li>
+                <li><a href="saadan-fungerer-det.html">Sådan fungerer det</a></li>
+                <li><a href="om-os.html">Om os</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="orderSection">
     <h1>LEVERING</h1>
     <br>
-    <section>
-        <input type="text" name="vejnavn" id="leveringsVej" placeholder="Vejnavn og nummer">
+    
+        <input type="text" name="vejnavn" id="leveringsVej" class="input" placeholder="Vejnavn og nummer">
         <br>
-        <input type="number" name="postnummer" id="leveringsPostnummer" placeholder="Postnummer">
+        <input type="number" name="postnummer" id="leveringsPostnummer" class="input" placeholder="Postnummer">
         <br>
-        <input type="By" name="by" id="leveringsBy" placeholder="By">
+        <input type="By" name="by" id="leveringsBy" class="input" placeholder="By">
         <br><br>
 
         <h2>Vælg leveringstidspunkt</h2>
-        <button>Søndag</button>
-        <button>Mandag</button>
+        <button class="orderButton">Søndag</button>
+        <button class="orderButton">Mandag</button>
         <br><br>
         <label for="tidsrum">leveringstidsrum:</label>
-        <select>
+        <select class="dropdownMenu">
             <option value="actual value 1">10:00 - 12:00</option>
             <option value="actual value 2">12:00 - 14:00</option>
             <option value="actual value 3">14:00 - 16:00</option>
             <option value="actual value 3">16:00 - 18:00</option>
           </select>
           <br>
-          <button>Fortsæt</button>
+          <a href="bestil-betaling.html"><button class="button">Fortsæt</button></a>
     </section>
+
+    
+    <footer>
+        <section>
+            <img class="background-photo footer-background" src="img/background.webp" alt="Beige baggrund med prikker">
+        </section>
+        <section class="footer">
+            <article>
+                <a href="index.html"> <img src="##" alt="Logo"></a>
+            </article>
+            <article>
+                <h1>Hurtige links</h1>
+                <ul class="links">
+                    <li><a class="info" href="saadan-fungerer-det.html">Sådan fungerer det</a></li>
+                    <li><a class="info" href="maaltidskasser.html">Måltidskasser</a></li>
+                    <li><a class="info" href="bestil.html">Bestil måltidskasse</a></li>
+                    <li><a class="info" href="om-os.html">Om os</a></li>
+                </ul>
+            </article>
+            <article>
+                <h1>Find os på</h1>
+                <article class="sociale-medier">
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </article>
+            </article>
+            <article>
+                <h1>Kontakt os</h1>
+                <a class="info" href="mailto:info_nippon@gmail.com">info_nippon@gmail.com</a>
+                <a class="info" href="tel:+4512345678">+45 12 34 56 78</a>
+            </article>
+        </section>
+    </footer>
 </body>
 </html>

@@ -7,39 +7,84 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js" defer></script>
 </head>
-<link>
-
+<body>
+<main>
+<header>
+    <nav>
+        <ul>
+            <li><a href="#">indsæt logo</a></li>
+            <li><a href="bestil.html">Bestil måltidskasse</a> </li>
+            <li><a href="#">Opskrifter</a></li>
+            <li><a href="maaltidskasser.html">Måltidskasser</a></li>
+            <li><a href="saadan-fungerer-det.html">Sådan fungerer det</a></li>
+            <li><a href="om-os.html">Om os</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
+    </nav>
+</header>
 
     <!--INDHOLD-->
     <h1>VÆLG MÅLTIDSKASSE</h1>
 
-<section>
+<section class="orderSection">
     <label>Antal personer:</label>
-    <button id="onePerson">1</button>
-    <button id="twoPeople">2</button>
-    <button id="threePeople">3</button>
-    <button id="fourPeople">4</button>
+    <button class="orderButton" id="onePerson">1</button>
+    <button class="orderButton" id="twoPeople">2</button>
+    <button class="orderButton" id="threePeople">3</button>
+    <button class="orderButton" id="fourPeople">4</button>
 <br>
 
     <label>Antal måltider:</label>
-    <button id="oneMeal">1</button>
-    <button id="twoMeals">2</button>
-    <button id="threeMeals">3</button>
-    <button id="fourMeals">4</button>
-    <button id="fiveMeals">5</button>
+    <button class="orderButton" id="oneMeal">1</button>
+    <button class="orderButton" id="twoMeals">2</button>
+    <button class="orderButton" id="threeMeals">3</button>
+    <button class="orderButton" id="fourMeals">4</button>
+    <button class="orderButton" id="fiveMeals">5</button>
 <br>
 
     <label>Vælg måltidskasse</label>
-    <select>
+    <select class="dropdownMenu">
         <option value="actual value 1">Kvikkasse</option>
         <option value="actual value 2">Vegetar</option>
         <option value="actual value 3">Autentisk</option>
         <option value="actual value 3">Gorumet</option>
       </select>
-</section>
 
 <!--Continue button-->
-<link rel="stylesheet" href="bestil-login.html"><button id="fortsaetBtn">Fortsæt</button></link>
-    
+<button class="button" id="fortsaetBtn"><a href="bestil-login.html">Fortsæt</a></button>
+</section>
+
+<footer>
+    <section>
+        <img class="background-photo footer-background" src="img/background.webp" alt="Beige baggrund med prikker">
+    </section>
+    <section class="footer">
+        <article>
+            <a href="index.html"> <img src="##" alt="Logo"></a>
+        </article>
+        <article>
+            <h1>Hurtige links</h1>
+            <ul class="links">
+                <li><a class="info" href="saadan-fungerer-det.html">Sådan fungerer det</a></li>
+                <li><a class="info" href="maaltidskasser.html">Måltidskasser</a></li>
+                <li><a class="info" href="bestil.html">Bestil måltidskasse</a></li>
+                <li><a class="info" href="om-os.html">Om os</a></li>
+            </ul>
+        </article>
+        <article>
+            <h1>Find os på</h1>
+            <article class="sociale-medier">
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </article>
+        </article>
+        <article>
+            <h1>Kontakt os</h1>
+            <a class="info" href="mailto:info_nippon@gmail.com">info_nippon@gmail.com</a>
+            <a class="info" href="tel:+4512345678">+45 12 34 56 78</a>
+        </article>
+    </section>
+</footer>
+</main>
 </body>
 </html>

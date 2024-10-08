@@ -8,18 +8,66 @@
     <script src="js/script.js" defer></script>
 </head>
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">indsæt logo</a></li>
+                <li><a href="bestil.html">Bestil måltidskasse</a> </li>
+                <li><a href="#">Opskrifter</a></li>
+                <li><a href="maaltidskasser.html">Måltidskasser</a></li>
+                <li><a href="saadan-fungerer-det.html">Sådan fungerer det</a></li>
+                <li><a href="om-os.html">Om os</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="orderSection">
     <h1>BETALING</h1>
 
     <label for="samletBeløb">Samlet beløb:</label>
     <br><br>
-    <input type="number" name="Kortnummer" id="kortnummer" placeholder="Kortnummer">
+    <input type="number" name="Kortnummer" id="kortnummer" class="input" placeholder="Kortnummer">
     <br>
-    <input type="number" name="regnummer" id="regnummer" placeholder="Reg. nummer">
+    <input type="number" name="regnummer" id="regnummer" class="input" placeholder="Reg. nummer">
     <br>
-    <input type="number" name="udloebsdato" id="udloebsdato" placeholder="Udløbsdato">
+    <input type="number" name="udloebsdato" id="udloebsdato" class="input" placeholder="Udløbsdato">
     <br>
-    <input type="number" name="kontrolcifre" id="kontrolcifre" placeholder="Kontrolcifre">
+    <input type="number" name="kontrolcifre" id="kontrolcifre" class="input" placeholder="Kontrolcifre">
     <br>
-    <button>Gennemfør betaling</button>
+    <a href="bestil-gennemfoert.html"><button class="button">Gennemfør betaling</button></a>
+    </section>
+    
+    <footer>
+        <section>
+            <img class="background-photo footer-background" src="img/background.webp" alt="Beige baggrund med prikker">
+        </section>
+        <section class="footer">
+            <article>
+                <a href="index.html"> <img src="##" alt="Logo"></a>
+            </article>
+            <article>
+                <h1>Hurtige links</h1>
+                <ul class="links">
+                    <li><a class="info" href="saadan-fungerer-det.html">Sådan fungerer det</a></li>
+                    <li><a class="info" href="maaltidskasser.html">Måltidskasser</a></li>
+                    <li><a class="info" href="bestil.html">Bestil måltidskasse</a></li>
+                    <li><a class="info" href="om-os.html">Om os</a></li>
+                </ul>
+            </article>
+            <article>
+                <h1>Find os på</h1>
+                <article class="sociale-medier">
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </article>
+            </article>
+            <article>
+                <h1>Kontakt os</h1>
+                <a class="info" href="mailto:info_nippon@gmail.com">info_nippon@gmail.com</a>
+                <a class="info" href="tel:+4512345678">+45 12 34 56 78</a>
+            </article>
+        </section>
+    </footer>
 </body>
 </html>

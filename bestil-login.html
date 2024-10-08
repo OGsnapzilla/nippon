@@ -7,33 +7,77 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js" defer></script>
 </head>
-<body>
-
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">indsæt logo</a></li>
+                <li><a href="bestil.html">Bestil måltidskasse</a> </li>
+                <li><a href="#">Opskrifter</a></li>
+                <li><a href="maaltidskasser.html">Måltidskasser</a></li>
+                <li><a href="saadan-fungerer-det.html">Sådan fungerer det</a></li>
+                <li><a href="om-os.html">Om os</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+  
+    <body>
     <h1>LOGIN ELLER OPRET BRUGER</h1>
 
-    <section>
+    <section class="orderSection">
         <label>Ny kunde? Opret bruger her</label>
         <br>
-    <input type="text" name="email" id="emailInput" placeholder="Din e-mail">
+    <input type="text" name="email" id="emailInput" class="input" placeholder="Din e-mail">
     <br>
-    <input type="text" name="adgangskode" id="adgInput" placeholder="Skriv adgangskode">
+    <input type="text" name="adgangskode" id="adgInput" class="input" placeholder="Skriv adgangskode">
     <br>
-    <input type="text" name="adgangskode" id="adgGentagInput" placeholder="Gentag adgangskode">
+    <input type="text" name="adgangskode" id="adgGentagInput" class="input" placeholder="Gentag adgangskode">
     <br>
-    <button>Opret din bruger</button>
+    <a href="bestil-levering.html"><button class="button">Opret din bruger</button></a>
+
     <br><br>
+
     <label for="oprettetMedlem">Eller er du allerede medlem? Login her</label>
     <br>
-    <input type="text" name="email" id="emailLoginInput" placeholder="Din e-mail">
+    <input type="text" name="email" id="emailLoginInput" class="input" placeholder="Din e-mail">
     <br>
-    <input type="text" name="adgangskode" id="adgLoginInput" placeholder="Din adgangskode">
+    <input type="text" name="adgangskode" id="adgLoginInput" class="input" placeholder="Din adgangskode">
     <br>
-    <button>Login</button>
-
-
-
+    <a href="bestil-levering.html"><button class="button">Login</button></a>
 
     </section>
-    
 </body>
+    
+    <footer>
+        <section>
+            <img class="background-photo footer-background" src="img/background.webp" alt="Beige baggrund med prikker">
+        </section>
+        <section class="footer">
+            <article>
+                <a href="index.html"> <img src="##" alt="Logo"></a>
+            </article>
+            <article>
+                <h1>Hurtige links</h1>
+                <ul class="links">
+                    <li><a class="info" href="saadan-fungerer-det.html">Sådan fungerer det</a></li>
+                    <li><a class="info" href="maaltidskasser.html">Måltidskasser</a></li>
+                    <li><a class="info" href="bestil.html">Bestil måltidskasse</a></li>
+                    <li><a class="info" href="om-os.html">Om os</a></li>
+                </ul>
+            </article>
+            <article>
+                <h1>Find os på</h1>
+                <article class="sociale-medier">
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </article>
+            </article>
+            <article>
+                <h1>Kontakt os</h1>
+                <a class="info" href="mailto:info_nippon@gmail.com">info_nippon@gmail.com</a>
+                <a class="info" href="tel:+4512345678">+45 12 34 56 78</a>
+            </article>
+        </section>
+    </footer>
+    
 </html>
