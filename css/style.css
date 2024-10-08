@@ -194,17 +194,9 @@ footer article {
     margin: 0 0.8rem;
 }
 
-/*MÅLTIDSKASSER*/
-.mealbox{
-    background-color: #37332A;
-}
-.meals{
-    width: 30rem;
-}
-
 /*Making show more - show less button*/
 .show-function{
-    max-height: 9.5rem;
+    max-height: 9.3rem;
     overflow: hidden; 
     position: relative;
 }
@@ -212,8 +204,45 @@ footer article {
     max-height: none; 
 }
 .show-more{
-    color: blue;
+    color: #DA8555;
     cursor: pointer;
     display: inline-block;
     margin-top: 10px;
+}
+
+/*MÅLTIDSKASSER*/
+.headline{
+    text-align: center;
+    margin-top: 1rem;
+}
+.mealbox{
+    background-color: #37332A;
+    padding: 1rem;
+    text-align: center;
+    color: #E6DFD5;
+    height: 30rem;
+}
+.mealbox-containers{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem; 
+    max-width: 800px;
+    margin: 4rem auto;
+}
+.meals{
+    width: 100%;
+}
+.button-center{
+    margin: 1rem 0 0 7rem;
+}
+.move-quick{
+    margin-top: -6rem;
+    width: 17rem;
+}
+.move-authentic{
+    margin: 0 0 0 -2.5rem;
+}
+.move-vegetarian{
+    width: 15rem;
+    margin: -1rem 0 0 0;
 }
