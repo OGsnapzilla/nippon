@@ -13,7 +13,6 @@ function toggleText(tekstId, link) {
     }
 }
 
-
 /*Scroll to top button*/
 window.onscroll = function() {
     scrollFunction();
