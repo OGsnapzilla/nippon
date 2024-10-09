@@ -97,6 +97,25 @@ a{
     text-decoration: none;
 }
 
+/*Scroll to top button*/
+#scrollBtn { /*Styling the button*/
+    display: none; 
+    position: fixed;
+    top: 1rem;
+    left: 28rem;
+    border: none;
+    background-color: #EB8E5A;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 10px;
+    cursor: pointer;
+}
+#scrollBtn:hover { /*changing color when hover*/
+    background-color: #37332A;
+}
+
+
 /*ORDER FLOW */
 
 .orderSection{
