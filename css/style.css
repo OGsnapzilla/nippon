@@ -159,8 +159,9 @@ a{
 }
 .background-photo{
     width: 100%;
-    height: auto%;
+    height: auto;
 }
+
 .first-photo{
     position: absolute;
     top: 1rem;
