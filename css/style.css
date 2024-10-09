@@ -21,6 +21,15 @@ h1{
 }
 
 /*Navigationsbar*/
+header{
+    background-image: url('../img/background.webp');
+    background-size: cover;
+    height: 5rem;
+    align-items: center; 
+    position: relative;
+    display: flex;
+    padding: 0 2rem; /* Tilføjer lidt indre afstand i headeren */
+}
 nav ul{
     width: 100%;
     list-style: none;
@@ -28,11 +37,9 @@ nav ul{
     justify-content: flex-end;
     align-items: center;
 }
-
 nav li{
     height: 50px;
 }
-
 nav a{ 
     height: 100%;
     padding: 0px 40px;
@@ -40,15 +47,20 @@ nav a{
     display: flex;
     align-items: center;
     color: black;
-    font-size:xx-small
+    font-size:8.5px;
 }
-
 nav a:hover{
     color: #6c6c6c;
 }
-
+nav a:active {
+    color: black;
+}
 nav li:first-child{ 
     margin-right: auto;
+}
+nav ul li:last-child {
+    position: relative;
+    top: -18px;
 }
 
 /*Button styling*/
