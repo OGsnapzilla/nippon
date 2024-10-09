@@ -284,7 +284,7 @@ footer a:hover {
 /*MÅLTIDSKASSER*/
 .headline{
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 .mealbox{
     background-color: #37332A;
@@ -298,13 +298,13 @@ footer a:hover {
     grid-template-columns: repeat(2, 1fr);
     gap: 5rem; 
     max-width: 800px;
-    margin: 4rem auto;
+    margin: 4rem auto -25rem auto;
 }
 .meals{
     width: 100%;
 }
 .button-center{
-    margin: 1rem 0 0 7rem;
+    margin: 1rem 0 0 6rem;
 }
 .move-quick{
     margin-top: -6rem;
@@ -315,5 +315,5 @@ footer a:hover {
 }
 .move-vegetarian{
     width: 15rem;
-    margin: -1rem 0 0 0;
+    margin: -1rem 0 1.5rem 0;
 }
