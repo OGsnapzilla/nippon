@@ -24,11 +24,11 @@ h1{
 header{
     background-image: url('../img/background.webp');
     background-size: cover;
-    height: 5rem;
+    height: 6rem;
     align-items: center; 
     position: relative;
     display: flex;
-    padding: 0 2rem; /* Tilføjer lidt indre afstand i headeren */
+    padding: 0 2rem;
 }
 nav ul{
     width: 100%;
@@ -80,12 +80,10 @@ nav ul li:last-child {
     justify-content: center;
     font-family: 'M PLUS 1p';
 }
-
 .button-grey{
     background-color: lightgrey;
     max-width: 10rem;
 }
-
 .button:hover{
     background-color: #EB8E5A;
     opacity: 100%;
@@ -94,11 +92,9 @@ nav ul li:last-child {
     background-color: #EB8E5A;
     opacity: 90%;
 }
-
 a{
     text-decoration: none;
 }
-
 
 /*ORDER FLOW */
 
@@ -151,34 +147,35 @@ a{
     position: relative;
     width: 100%;
     height: 300px;
-
 }
 .background-photo{
     width: 100%;
-    height: auto;
+    height: auto%;
 }
 .first-photo{
     position: absolute;
-    top: 4rem;
+    top: 1rem;
     left: 4.5rem;
     width: 85%; 
     height: 25rem;
 }
-
 .cupon-code{
     background-color: white;
     opacity: 70%;
     position: absolute;
-    top: 6rem;
+    top: 3rem;
     left: 38rem;
     width: 23%; 
     height: 19rem;
     padding: 1rem;
 }
+.button-right{
+    margin-left: 3.5rem;
+}
 
 /*3 gode grunde til at vælge Nippon - section*/
 .headline{
-    margin: 21rem 0 0 3rem;
+    margin: 141rem 0 0 3rem;
 }
 .reasons-row{
     display: flex;
@@ -196,63 +193,8 @@ a{
     border-radius: 100%;
     margin: 1rem;
 }
-
-
-/*Mest populære - section på forsiden*/
-.popular-box{
-    background-color: #37332A;
-    color: #E6DFD5;
-    width: 83%;
-    margin: 0 0 0 3rem;
-    padding: 2rem;
-    position: absolute;
-    height: 20rem;
-}
-
-.text{
-    width: 60%;
-}
-
-.meal-photo{
-    width: 35%;
-    margin: -15rem 0 0 30rem;
-}
-
-.double-button{
-    display: flex;
-    flex-direction: row;
-    margin: -4rem 2rem 0 2rem;
-}
-
-.button-move{
-    margin-right: 5rem;
-}
-
-
-/*FOOTER styling*/
-.footer-background{
-    height: 15rem;
-}
-.footer{
-    position: relative;
-    margin: -13rem 0 0 5rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-footer article {
-    flex: 1; 
-    margin: 0px 10px 0 10px;
-}
-.links{
-    list-style-type: none;
-}
-.info{
-    color: black;
-}
-.sociale-medier{
-    font-size: 2rem;
-    margin: 0 0.8rem;
+.reasons-container{
+    margin-top: 18rem;
 }
 
 /*Making show more - show less button*/
@@ -270,6 +212,74 @@ footer article {
     display: inline-block;
     margin-top: 10px;
 }
+
+/*Mest populære - section på forsiden*/
+.popular-box{
+    background-color: #37332A;
+    color: #E6DFD5;
+    width: 83%;
+    margin: 2rem 0 0 3rem;
+    padding: 2rem;
+    position: absolute;
+    height: 20rem;
+}
+.text{
+    width: 60%;
+}
+.meal-photo{
+    width: 35%;
+    margin: -15rem 0 0 30rem;
+}
+.double-button{
+    display: flex;
+    flex-direction: row;
+    margin: -4rem 2rem 0 2rem;
+}
+.button-move{
+    margin-right: 5rem;
+}
+
+
+/*FOOTER styling*/
+footer{
+    background-image: url('../img/background.webp'); /*Putting in as background color*/
+    background-size: cover;
+    height: 15rem;
+    align-items: center; 
+    position: relative;
+    display: flex;
+    padding: 0 2rem;
+    margin: 30rem 0 0 0;
+}
+.footer{
+    position: relative;
+    margin: 0 0 0 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+footer article {
+    flex: 1; 
+    margin: 0 3.5rem 0 -1rem;
+}
+footer a:hover {
+    color: #6c6c6c;
+}
+.button:active {
+    color: black;
+}
+.links{
+    list-style-type: none;
+}
+.info{
+    color: black;
+}
+.sociale-medier{
+    font-size: 2rem;
+    margin: 0 0.8rem;
+}
+
+
 
 /*MÅLTIDSKASSER*/
 .headline{
