@@ -13,6 +13,8 @@
     font-family: 'M PLUS 1p';
     src: url(../fonts/M_PLUS_1p/MPLUS1p-Light.ttf);
 }
+
+/*Inserting fonts*/
 body{
     font-family: 'M PLUS 1p';
     line-height: 1.8;
@@ -22,7 +24,7 @@ h1{
 }
 
 /*Navigationsbar*/
-header{
+header{ /*Styling the bckground*/
     background-image: url('../img/background.webp');
     background-size: cover;
     height: 6rem;
@@ -56,10 +58,10 @@ nav a:hover{
 nav a:active {
     color: black;
 }
-nav li:first-child{ 
+nav li:first-child{ /*Logo to the left*/
     margin-right: auto;
 }
-nav ul li:last-child {
+nav ul li:last-child { /*Login botton to the right*/
     position: relative;
     top: -18px;
 }
@@ -85,13 +87,13 @@ nav ul li:last-child {
     background-color: lightgrey;
     max-width: 10rem;
 }
-.button:hover{
+.button:hover{ /*Changing colors when hover*/
+    background-color: #37332A;
+    color: white;
+}
+.button:active { /*Changing colors when active*/
     background-color: #EB8E5A;
     opacity: 100%;
-}
-.button:active {
-    background-color: #EB8E5A;
-    opacity: 90%;
 }
 a{
     text-decoration: none;
@@ -196,7 +198,6 @@ a{
     width: 100%;
     height: auto;
 }
-
 .first-photo{
     position: absolute;
     top: 1rem;
@@ -204,7 +205,7 @@ a{
     width: 85%; 
     height: 25rem;
 }
-.cupon-code{
+.cupon-code{ /*Making white box around text*/
     background-color: white;
     opacity: 70%;
     position: absolute;
@@ -237,12 +238,17 @@ a{
     align-self: center;
     border-radius: 100%;
     margin: 1rem;
+    transition: transform 0.3s ease-in-out;/*Zoom-effect when hover on img*/
+}
+.photo-circles:hover { /*How much it zooms */
+    transform: scale(1.1);
 }
 .reasons-container{
     margin-top: 18rem;
 }
 
-/*Making show more - show less button*/
+
+/*Making show more - show less button with js*/
 .show-function{
     max-height: 9.3rem;
     overflow: hidden; 
@@ -258,7 +264,7 @@ a{
     margin-top: 10px;
 }
 
-/*Mest populære - section på forsiden*/
+/*Mest populære - section*/
 .popular-box{
     background-color: #37332A;
     color: #E6DFD5;
@@ -338,7 +344,7 @@ footer a:hover {
     color: #E6DFD5;
     height: 30rem;
 }
-.mealbox-containers{
+.mealbox-containers{ /*Using grid to style the different boxes*/
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 5rem; 
