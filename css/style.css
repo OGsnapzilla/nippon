@@ -8,10 +8,11 @@
 @font-face {
     font-family: 'Kurale';
     src: url(../fonts/Kurale/Kurale-Regular.ttf);
+}
+@font-face {
     font-family: 'M PLUS 1p';
     src: url(../fonts/M_PLUS_1p/MPLUS1p-Light.ttf);
 }
-
 body{
     font-family: 'M PLUS 1p';
     line-height: 1.8;
