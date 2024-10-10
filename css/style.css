@@ -207,6 +207,9 @@ input::placeholder {
     opacity: 0.5;  
 }
 
+#pPayment {
+    text-align: left;
+}
 
 /*INDEX*/
 .sale-section{
