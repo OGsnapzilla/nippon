@@ -1,36 +1,48 @@
-'use strict;'
+document.addEventListener("DOMContentLoaded", function () {
+    const personButtons = document.querySelectorAll(".buttonGroup button");
+    const mealButtons = document.querySelectorAll(".buttonGroup button");
+    const mealDropdown = document.querySelector(".dropdownMenu");
+    const continueBtn = document.getElementById("fortsaetBtn");
 
+    let selectedPeople = 1; // default to 1 person
+    let selectedMeals = 1; // default to 1 meal
+    let selectedMealKitPrice = 40; // default Kvikkasse price
 
-//ORDER 
+    // Event listeners for the number of people selection
+    personButtons.forEach(button => {
+        button.addEventListener("click", function () {
+            selectedPeople = parseInt(this.value);
+            localStorage.setItem("selectedPeople", selectedPeople);
+        });
+    });
 
+    // Event listeners for the number of meals selection
+    mealButtons.forEach(button => {
+        button.addEventListener("click", function () {
+            selectedMeals = parseInt(this.value);
+            localStorage.setItem("selectedMeals", selectedMeals);
+        });
+    });
 
-// Function to add one item to the cart for a specific product
-function addToCart(product) {
-    let quantity = document.getElementById(product).value;
-    document.getElementById(product).value = parseInt(quantity) + 1;
+    // Event listener for the meal kit dropdown
+    mealDropdown.addEventListener("change", function () {
+        selectedMealKitPrice = parseInt(this.value);
+        localStorage.setItem("selectedMealKitPrice", selectedMealKitPrice);
+    });
 
-    updateTotalPrice(product); // opdater totalsum
-}
+    // Store all selections in localStorage when the continue button is clicked
+    continueBtn.addEventListener("click", function () {
+        const totalSum = selectedPeople * selectedMeals * selectedMealKitPrice;
+        localStorage.setItem("totalSum", totalSum);
+    });
+});
 
-// Update the total price
-function updateTotalPrice(product) 
-{
-    const quantityElement = document.getElementById(product);
-    const priceElement = document.getElementById(product + '-price');
-    const totalElement = document.getElementById(product+ '-total');
+document.addEventListener("DOMContentLoaded", function () {
+    // Retrieve the total sum from localStorage
+    const totalSum = localStorage.getItem("totalSum");
 
-    if ( quantityElement && priceElement && totalElement ) {
-        const quantity = parseInt(quantityElement.value);
-        const price = parseInt(priceElement.value);
-        const total = quantity * price;
-
-        totalElement.value = total;
-
-        // opdater bestilling javascript objektet order -> se linje 1
-        order[product].quantity = quantity;
-        order[product].totalPrice = total;
-        checkoutTotalPrice('onePerson', 'twoPeople', 'threePeople', 'fourPeople', 'oneMeal', 'twoMeals', 'threeMeals',
-            'fourMeals', 'fiveMeals'
-        );
+    // Set the total sum in the payment input field
+    if (totalSum) {
+        document.getElementById("totalSum").value = totalSum;
     }
-}
+});

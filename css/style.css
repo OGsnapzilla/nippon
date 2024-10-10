@@ -129,10 +129,6 @@ a{
     height: 100vh; /* Full height of the viewport */
     margin: 0;    /* Remove any default margins */
     text-align: center;
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     }
 
 .orderButton {
@@ -142,9 +138,17 @@ a{
     width: 50px;
     height: 40px;
     margin: 1px;
+    border-radius: 5px;
 }
 .orderButton:hover {
     background-color: #635d4f;
+}
+
+
+/* When the button is clicked (active state) */
+.orderButton:active, .orderButton:focus {
+    background-color: #635d4f; /* Same color as hover */
+    outline: none; /* Removes the focus outline */
 }
 
 .buttonGroup {
@@ -153,20 +157,30 @@ a{
 }
 
 /*ORDER FLOW */
-
-.orderSection{
+.orderSectionContainer {
     display: flex;
-    flex-direction: column; 
-    align-items: flex-start; /* Aligns elements inside to the left */
-    height: auto;
-    padding: 20px;
-    margin-left: 40%;
+    flex-direction: row; /* Align elements side by side */
+    align-items: flex-start; /* Align items to the top */
+    margin-top: 50px;
+    width: 100%;
+}
+
+.orderSection {
+    padding-left: 30%;
+    align-items: flex-start; 
+}
+
+.bambusImage {
+    max-width: 50%; 
+    height: auto; 
     margin-top: 100px;
-    }
+}
 
 .steps {
-    width: 50%;   
+    width: 50%;  
+    margin-bottom: 20px; 
 }
+
 
 /*DROPDOWN MENUS*/
 .dropdownMenu {
@@ -182,9 +196,15 @@ a{
 
 .input {
     background-color: #37332A;
+    color: white;
     height: 30px;
     width: 200px;
     margin-bottom: 5px;
+}
+
+input::placeholder {
+    color: white; 
+    opacity: 0.5;  
 }
 
 
