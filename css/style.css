@@ -24,14 +24,14 @@ h1{
 }
 
 /*Navigationsbar*/
-header{ /*Styling the bckground*/
+header{ /*Styling the background*/
     background-image: url('../img/background.webp');
     background-size: cover;
     height: 6rem;
     align-items: center; 
     position: relative;
     display: flex;
-    padding: 0 2rem;
+    padding: 0 1rem;
 }
 nav ul{
     width: 100%;
@@ -45,12 +45,13 @@ nav li{
 }
 nav a{ 
     height: 100%;
-    padding: 0px 40px;
+    padding: 0px 30px;
     text-decoration: none;
     display: flex;
     align-items: center;
     color: black;
     font-size:8.5px;
+    margin-left: 0.5rem;
 }
 nav a:hover{
     color: #6c6c6c;
