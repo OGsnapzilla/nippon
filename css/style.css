@@ -70,11 +70,10 @@ nav ul li:last-child { /*Login botton to the right*/
 /*Button styling*/
 .button{
     background-color: #EB8E5A;
-    opacity: 90%;
     cursor: pointer;
     border: none;
-    border-radius: 20px;
-    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 40px;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.133);
     padding: 1rem 1.5rem;
     max-width: 8rem;
     max-height: 2rem;
