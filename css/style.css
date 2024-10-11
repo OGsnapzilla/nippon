@@ -391,3 +391,18 @@ footer a:hover {
     width: 15rem;
     margin: -1rem 0 1.5rem 0;
 }
+
+/* OM OS */
+
+#gifErrorSection {
+    text-align: center;
+}
+
+#gifError {
+    height: 600px;
+}
+
+#errorLink {
+    text-decoration: underline;
+    font-weight: 700;
+}
