@@ -1,14 +1,14 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const personButtons = document.querySelectorAll(".buttonGroup.people button"); // Change here
-    const mealButtons = document.querySelectorAll(".buttonGroup.meals button"); // Change here
+    const personButtons = document.querySelectorAll(".buttonGroup.people button"); 
+    const mealButtons = document.querySelectorAll(".buttonGroup.meals button"); 
     const mealDropdown = document.querySelector(".dropdownMenu");
     const continueBtn = document.getElementById("fortsaetBtn");
 
-    let selectedPeople = 1; // default to 1 person
-    let selectedMeals = 1; // default to 1 meal
-    let selectedMealKitPrice = 40; // default Kvikkasse price
+    let selectedPeople = 1; 
+    let selectedMeals = 1; 
+    let selectedMealKitPrice = 40; 
 
-    // Event listeners for the number of people selection
+    // Event listeners for the number of people 
     personButtons.forEach(button => {
         button.addEventListener("click", function () {
             selectedPeople = parseInt(this.value);
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    // Event listeners for the number of meals selection
+    // Event listeners for the number of meals 
     mealButtons.forEach(button => {
         button.addEventListener("click", function () {
             selectedMeals = parseInt(this.value);
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    // Event listener for the meal kit dropdown
+    // Event listener for the meal dropdown
     mealDropdown.addEventListener("change", function () {
         selectedMealKitPrice = parseInt(this.value);
         localStorage.setItem("selectedMealKitPrice", selectedMealKitPrice);
@@ -38,10 +38,10 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-    // Retrieve the total sum from localStorage
+    // Retrieve the total 
     const totalSum = localStorage.getItem("totalSum");
 
-    // Set the total sum in the payment input field
+    // Set total sum payment input field
     if (totalSum) {
         document.getElementById("totalSum").value = totalSum;
     }
