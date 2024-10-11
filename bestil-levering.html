@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js" defer></script>
 </head>
+
 <body>
     <header>
         <nav>
@@ -22,7 +23,7 @@
             </ul>
         </nav>
     </header>
-
+    <section class="orderSectionContainer">
     <section class="orderSection">
         <section class="orderImg">
             <img class="steps" src="img/stepthree.webp" alt="first step">
@@ -35,24 +36,28 @@
         <br>
         <input type="number" name="postnummer" id="leveringsPostnummer" class="input" placeholder="Postnummer">
         <br>
-        <input type="By" name="by" id="leveringsBy" class="input" placeholder="By">
+        <input type="text" name="by" id="leveringsBy" class="input" placeholder="By">
         <br><br>
 
         <h2>Vælg leveringstidspunkt</h2>
         <button class="orderButton">Søndag</button>
         <button class="orderButton">Mandag</button>
         <br><br>
-        <label for="tidsrum">leveringstidsrum:</label>
-        <select class="dropdownMenu">
-            <option value="actual value 1">10:00 - 12:00</option>
-            <option value="actual value 2">12:00 - 14:00</option>
-            <option value="actual value 3">14:00 - 16:00</option>
-            <option value="actual value 3">16:00 - 18:00</option>
+        <label for="dropdownMenu">leveringstidsrum:</label>
+        <select id="dropdownMenu" class="dropdownMenu">
+            <option value="12">10:00 - 12:00</option>
+            <option value="14">12:00 - 14:00</option>
+            <option value="16">14:00 - 16:00</option>
+            <option value="18">16:00 - 18:00</option>
           </select>
           <br>
-          <a href="bestil-betaling.html"><button class="button">Fortsæt</button></a>
+          <a class="button" href="bestil-betaling.html">Fortsæt</a>
     </section>
 
+    <section class="orderImg">
+        <img src="img/bambus.webp" alt="bambus illustration" class="bambusImage">
+    </section>
+    </section>
     
     <footer>
         <section class="footer">
@@ -81,5 +86,6 @@
                 <a class="info" href="tel:+4512345678">+45 12 34 56 78</a>
             </article>
         </section>
+        </footer>
 </body>
 </html>

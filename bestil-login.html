@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js" defer></script>
 </head>
+
+<body>
     <header>
         <nav>
             <ul>
@@ -21,13 +23,12 @@
             </ul>
         </nav>
     </header>
-  
-    <body>
 
-        <section class="orderSection">
-        <section class="orderImg">
-            <img class="steps" src="img/steptwo.webp" alt="first step">
-        </section>
+        <section class="orderSectionContainer">
+         <section class="orderSection">
+            <section class="orderImg">
+                <img class="steps" src="img/steptwo.webp" alt="first step">
+            </section>
 
     <h1>LOGIN ELLER OPRET BRUGER</h1>
 
@@ -39,20 +40,23 @@
     <br>
     <input type="text" name="adgangskode" id="adgGentagInput" class="input" placeholder="Gentag adgangskode">
     <br>
-    <a href="bestil-levering.html"><button class="button">Opret din bruger</button></a>
+    <a class="button" href="bestil-levering.html">Opret din bruger</a>
 
     <br><br>
 
-    <label for="oprettetMedlem">Eller er du allerede medlem? Login her</label>
+    <label for="emailLoginInput">Eller er du allerede medlem? Login her</label>
     <br>
     <input type="text" name="email" id="emailLoginInput" class="input" placeholder="Din e-mail">
     <br>
     <input type="text" name="adgangskode" id="adgLoginInput" class="input" placeholder="Din adgangskode">
     <br>
-    <a href="bestil-levering.html"><button class="button">Login</button></a>
+    <a class="button" href="bestil-levering.html">Login</a>
+</section>
 
+    <section class="orderImg">
+        <img src="img/bambus.webp" alt="bambus illustration" class="bambusImage">
     </section>
-</body>
+</section>
     
     <footer>
         <section class="footer">
@@ -82,5 +86,5 @@
             </article>
         </section>
     </footer>
-    
+</body>
 </html>
