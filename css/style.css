@@ -377,7 +377,9 @@ footer a:hover {
     width: 100%;
 }
 .button-center{
-    margin: 1rem 0 0 6.8rem;
+    margin: 1rem 0 0 6rem;
+    width: 5rem;
+    height: 1rem;
 }
 .move-quick{
     margin-top: -6rem;
