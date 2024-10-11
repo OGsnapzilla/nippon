@@ -343,7 +343,7 @@ footer a:hover {
     padding: 1rem;
     text-align: center;
     color: #E6DFD5;
-    height: 30rem;
+    height: 31rem;
 }
 .mealbox-containers{ /*Using grid to style the different boxes*/
     display: grid;
@@ -356,7 +356,7 @@ footer a:hover {
     width: 100%;
 }
 .button-center{
-    margin: 1rem 0 0 6rem;
+    margin: 1rem 0 0 6.8rem;
 }
 .move-quick{
     margin-top: -6rem;
@@ -368,4 +368,7 @@ footer a:hover {
 .move-vegetarian{
     width: 15rem;
     margin: -1rem 0 1.5rem 0;
+}
+.price{
+    color: #DA8555;
 }
