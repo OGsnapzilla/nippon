@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const personButtons = document.querySelectorAll(".buttonGroup button");
-    const mealButtons = document.querySelectorAll(".buttonGroup button");
+    const personButtons = document.querySelectorAll(".buttonGroup.people button"); // Change here
+    const mealButtons = document.querySelectorAll(".buttonGroup.meals button"); // Change here
     const mealDropdown = document.querySelector(".dropdownMenu");
     const continueBtn = document.getElementById("fortsaetBtn");
 
